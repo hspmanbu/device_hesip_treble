@@ -5,11 +5,16 @@ PRODUCT_COPY_FILES := \
 
 #Use a more decent APN config
 PRODUCT_COPY_FILES := \
-	vendor/copy/files/apns-conf.xml:system/etc/apns-conf.xml
+	device/hesip/treble/copy/files/apns-conf.xml:system/etc/apns-conf.xml
 
 #Copy ES file manager
 PRODUCT_COPY_FILES := \
-	vendor/copy/files/es.apk:system/app/es/es.apk
+	device/hesip/treble/copy/files/es.apk:system/app/es/es.apk
+
+#Copy phone-location data
+PRODUCT_COPY_FILES := \
+	device/hesip/treble/copy/files/phonelocation.dat:system/media/location/suda-phonelocation.dat
+
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += device/phh/treble/sepolicy
 DEVICE_PACKAGE_OVERLAYS += device/phh/treble/overlay
 
