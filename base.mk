@@ -1,22 +1,23 @@
 #Huawei devices don't declare fingerprint hardware feature
 #TODO: Proper detection
-PRODUCT_COPY_FILES := \
+PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml
 
-#Use a more decent APN config
-PRODUCT_COPY_FILES := \
-	device/hesip/treble/copy/files/apns-conf.xml:system/etc/apns-conf.xml
+#APN and SPN
+PRODUCT_COPY_FILES += \
+	device/hesip/treble/copy/files/apns-conf.xml:system/etc/apns-conf.xml \
+	device/hesip/treble/copy/files/spn-conf.xml:system/etc/spn-conf.xml
 
 #Copy ES file manager
-#PRODUCT_COPY_FILES := \
-#	device/hesip/treble/copy/files/es.apk:system/app/es/es.apk
+PRODUCT_COPY_FILES += \
+	device/hesip/treble/copy/files/es.apk:system/app/es/es.apk
  
 #add superuser apk
-PRODUCT_COPY_FILES := \
+PRODUCT_COPY_FILES += \
 	device/hesip/treble/copy/files/superuser.apk:system/app/superuser/superuser.apk
  
 #Copy phone-location data
-PRODUCT_COPY_FILES := \
+PRODUCT_COPY_FILES += \
 	device/hesip/treble/copy/files/phonelocation.dat:system/media/location/suda-phonelocation.dat
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += device/hesip/treble/sepolicy
