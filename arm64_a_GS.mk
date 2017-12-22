@@ -1,6 +1,6 @@
 include build/make/target/product/treble_common.mk
-$(call inherit-product, device/he/treble/base.mk)
-$(call inherit-product, device/he/treble/gapps.mk)
+$(call inherit-product, device/hesip/treble/base.mk)
+$(call inherit-product, device/hesip/treble/gapps.mk)
 
 PRODUCT_NAME := arm64_a_GS
 PRODUCT_DEVICE := generic_arm64_a
