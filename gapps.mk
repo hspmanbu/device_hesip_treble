@@ -6,9 +6,8 @@ PRODUCT_PACKAGES += \
        Chrome \
        CalculatorGoogle \
        PrebuiltDeskClockGoogle \
-       CalendarGooglePrebuilt \
        GoogleHome \
-	   GooglePinyinIME \
+       GooglePinyinIME \
        phh-overrides
 
 $(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
