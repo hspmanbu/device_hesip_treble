@@ -11,11 +11,11 @@ PRODUCT_COPY_FILES += \
 #Copy ES file manager
 PRODUCT_COPY_FILES += \
 	device/hesip/treble/copy/files/es.apk:system/app/es/es.apk
- 
+
 #add superuser apk
 PRODUCT_COPY_FILES += \
 	device/hesip/treble/copy/files/superuser.apk:system/app/superuser/superuser.apk
- 
+
 #Copy phone-location data
 PRODUCT_COPY_FILES += \
 	device/hesip/treble/copy/files/phonelocation.dat:system/media/location/suda-phonelocation.dat
