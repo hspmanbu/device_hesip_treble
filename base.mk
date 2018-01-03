@@ -9,6 +9,11 @@ PRODUCT_COPY_FILES += \
 	device/hesip/treble/copy/files/apns-conf.xml:system/etc/apns-conf.xml \
 	device/hesip/treble/copy/files/spn-conf.xml:system/etc/spn-conf.xml
 
+#GPS file
+PRODUCT_COPY_FILES += \
+	device/hesip/treble/copy/files/gps_debug.conf:system/etc/gps_debug.conf \
+	device/hesip/treble/copy/files/gps.conf:system/etc/gps.conf
+
 #Copy ES file manager
 PRODUCT_COPY_FILES += \
 	device/hesip/treble/copy/files/es.apk:system/app/es/es.apk
