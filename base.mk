@@ -1,8 +1,9 @@
 #Huawei devices don't declare fingerprint hardware feature
 #TODO: Proper detection
 PRODUCT_COPY_FILES += \
-	frameworks/native/data/etc/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml
-
+	frameworks/native/data/etc/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml \
+	frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
+	
 #APN and SPN
 PRODUCT_COPY_FILES += \
 	device/hesip/treble/copy/files/apns-conf.xml:system/etc/apns-conf.xml \
